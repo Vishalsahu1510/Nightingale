@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    --bg--:#f0f2f5;
+    --fcolor--:#1877f2;
+   --bcolor--:#42b72a;
+   --pcolor--:#1c1e21;
+   --hcolor--:rgba(128, 128, 128, 0.211);
+}
+.header{
+    box-shadow: 1px 2px 5px 2px rgb(100, 96, 96);
+    padding: 0px 10px;
+    background-color: white;
+    height: 58px;
+}
+.header,.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    flex: 0.3;
+}
+.right{
+    flex: 0.4;
+}
+body{
+    background-color: var(--bg--);
+    height: 100vh;
+}
+.search{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(145, 142, 142, 0.175);
+    outline-color: var(--fcolor--);
+    
+}
+.center{
+    flex: 0.3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.center i{
+    font-size: 1.5rem;
+    padding: 15px 50px;
+}
+.center i:hover{
+    background-color: rgba(128, 128, 128, 0.211);
+    cursor: pointer;
+}
+.active{
+    color: var(--fcolor--);
+    border-bottom: 3px solid var(--fcolor--);
+}
+.find-friend,.profile{
+    color: var(--pcolor--);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: var(--hcolor--);
+    display: block;
+    padding: 0.5rem 1rem;
+   text-transform: capitalize;
+   display: flex;
+   align-items: center;
+}
+.profile{
+    padding: 2px 5px;
+    background-color: transparent;
+    
+}
+.pimage{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin:0px 5px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.notification-icon{
+    font-size: 1.3rem;
+    background-color: var(--hcolor--);
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+.alert{
+  position: relative;
+}
+.alert h5{
+   position: absolute;
+   top: 5px;
+   left: 70px;
+   font-size: 0.6rem;
+   font-weight: 900;
+   background-color: red;
+   padding: 5px 10px;
+   border-radius: 30px;
+   color: white;
+   font-family:cursive;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90vh;
+}
+.main-left{
+    flex: 0.260;
+    border: 1px solid black;
+    display: column;
+    align-items: flex-start;
+}
+.main-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px;
+}
+@media (max-width:1026px) {
+    .main-left,.main-right{
+        display: none;
+    }
+    .main-center{
+        flex:1;
+        width:100vw;
+    }
+   .icons{
+    display: none;
+   }
+   .find-friend,#search{
+    display: none;
+   }
+    .main{
+        justify-content: center;
+    }
+}
+.main-center{
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid black;
+   overflow-y: auto;
+}
+.icon{
+    margin-right: 5px;
+}
+.current-update{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow-x: scroll;
+  width: 100%;
+}
+.friend-card{
+    height: 144px;
+    width: 96px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    background-image: url(logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.user-card{
+    height: 164px;
+    width: 116px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-card-image{
+    flex: 0.7;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.user-card-name{
+    flex: 0.3;
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+   display: flex;
+   align-items: flex-end;
+   position: relative;
+}
+.user-card-name h4{
+    font-size: 0.8rem;
+    font-family: arial;
+    margin: 5px;
+}
+.add{
+    position: absolute;
+    top: -18px;
+    left:43px;
+    background-color: var(--fcolor--);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.friend-card:hover{
+    background-size:180px;
+    transition: background 1s linear;
+    cursor: pointer;
+}
+.friend-card-image,.post-honer-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--fcolor--);
+}
+.friend-card-name{
+    font-size: 0.8rem;
+    font-family: arial;
+   background-color: rgba(0, 0, 0, 0.527);
+   color: white;
+   padding: 20px 10px;
+ width: 84%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   border-radius: 8px;
+}
+.main-right{
+    flex: 0.260;
+    border: 1px solid black;
+
+}
+.more{
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: var(--fcolor--);
+    border-radius: 50%;
+}
+.text-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.addition{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+.addition i{
+    color: var(--icolor--);
+   font-size: 2rem;
+}
+.addition h3{
+    font-size: 0.8rem;
+    color: rgba(128, 128, 128, 0.849);
+    font-family: arial;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.home-post,.post-card{
+    display: flex;
+    flex-direction: column;
+   background-color: white;
+   padding: 10px 15px;
+   border-radius: 8px;
+   box-shadow: 0px 0px 4px 1px gray;
+   margin-top: 20px;
+   width: 85%;
+}
+.post{
+    width: 80%;
+    margin-left: 10px;
+}
+
+.post-honer-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.734);
+}
+.post-honer-data{
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.post-honer-data-container{
+    display: flex;
+    flex-direction: row;
+}
+.post-honer-name{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.post-time{
+    font-size: 0.7rem;
+    color: gray;
+}
+.post-image{
+    width: 100%;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update,.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin: 5px 0px;
+}
+.buttons{
+    padding: 5px 20%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.like{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: gray;
+}
+.count{
+    margin-left: 5px;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.comment{
+    height: 10rem;
+    padding: 5px 20px;
+    margin: 10px 0px;
+}
+.sum{
+    font-size: 0.7rem;
+    color: #1c1e21;
+    font-family: system-ui;
+    font-weight: 700;
+}
+.text-comment{
+    color: white;
+    background-color: #1c1e21;
+    border-radius: 10px 10px 10px 0px;
+    display: inline;
+    padding: 2px 3px;
+    margin-top: 5px;
+}
+.allcomment{
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+}

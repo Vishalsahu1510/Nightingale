@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nightingayle</title>
+    <link href="/img/logofinal.png" rel="icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- navsection -->
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="logo.png" /> </a>
+        <div class="navlinks" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="./signup_page/signup.php">Signup</a></li>
+            <li><a href="./signin_page/signin.php">Signin</a></li>
+            <!-- <li><a href="">OTHERS</a></li> -->
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <!-- home-text  -->
+      <div class="home">
+        <h1>Welcome! <br>To Nightingale</h1>
+        <p>
+          We believe that music is the language of soul,especially 
+          for the couple,if brings them more <br> closer & create unforgettable memories.
+          <ul type="none">
+            <li>Regardless the physical distance,synchronise the beats of your heart through music.</li>
+            <li>Engage in thrilling trivia battes like song deut challenge,music video challenge,dance challenge
+              finish the lyrics challenge.</li>
+            <li>Win against other couples & become couple of month.</li>
+          </ul>
+        </p>
+        <a href="about.html" class="home-link">
+          Explore More</a>
+          <a href="about.html" class="home-link">
+            What More?</a>
+      </div>
+    </section>
+
+
+
+    <!-- -------- Combating Abuse --------  -->
+    <section class="combat">
+
+      <div class="combrow">
+        <div class="combat-col">
+          <h3>Quality Time</h3>
+          <p>
+            Quality time is an specialized area  where couples can synchronize their souls 
+            through music and engage in other interesting activities that enhance their 
+            relationship privately.
+          </p>
+          <a href="#">Open</a>
+        </div>
+        <div class="combat-col">
+          <h3>Couple World</h3>
+          <p>
+            Couple World is an amazing area specially designed for couples to engage
+             in public interactions, musical battles, and other entertaining activities.
+          </p>
+          <a href="./couple_world/couple_world.php">Open</a>
+        </div>
+        <div class="combat-col">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid beatae
+             aut. Hic mollitia nulla iste, molestiae sequi quasi repudiandae.
+          </p>
+          <a href="#">Open</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- testimonials -------  -->
+   
+
+    <!---------- call to action --------->
+  
+    <!-- --------- footer ---------  -->
+    <footer>
+      <div class="foot">
+        <div class="col">
+          <img src="img/logofinal.png" class="logo"/>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum
+            itaque magnam, similique voluptatem expedita  eligendi reiciendis 
+            
+          </p>
+        </div>
+
+        <div class="col">
+            <h3>Abhinav Anand <div class="underline"><span></span></div></h3>
+            <p>Web Developer</p>
+            <p>JEC, Jabalpur</p>
+            <p>482011, India</p>
+            <p class="email-ID">akthephenomenal@gmail.com</p>
+            <h4>+91-0123456789</h4>
+        </div>
+        <div class="col">
+              <h3>Links<div class="underline"><span></span></div></h3>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="Gethelp.html">Services</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="Contact.html">Contacts</a></li>
+              </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form action="">
+              <i class="fa fa-envelope"></i>
+              <input type="email" placeholder="Enter your email id" required>
+              <button class="submit"><i class="fa fa-long-arrow-right"></i></button>
+            </form>
+            <div class="icons">
+              <i class="fa fa-facebook-official"></i>
+              <i class="fa fa-instagram" ></i>    
+             <i class="fa fa-twitter"></i>
+              <i class="fa fa-whatsapp"></i>
+            </div>
+        </div>
+      </div>
+      <hr>
+    </footer>
+    <p class="copyright">Nightingale © 2023 - All rights reserved </p>
+
+
+
+    <!-- -------javascript for toggle menu in phones----->
+    <script>
+      var navlinks = document.getElementById("navLinks");
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
